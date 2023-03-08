@@ -1,0 +1,23 @@
+{
+  "name": "apiserver",
+  "version": "1.0.0",
+  "description": "initialize NodeJS project:\r `npm init`\r ***\r install node moduls:\r `npm install package_name`\r ***\r install **all** node_moduls after deletion:\r `npm install`\r ### remember to delete node_moduls before transferring the project\r **use .gitignore file for ignoring node_modules**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BesanaLorenzo/ApiServer.git"
+  },
+  "author": "besana.lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BesanaLorenzo/ApiServer/issues"
+  },
+  "homepage": "https://github.com/BesanaLorenzo/ApiServer#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
