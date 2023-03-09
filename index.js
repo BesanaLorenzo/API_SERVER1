@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.send('Hello World');
 })
 //-- http://localhost:3000/somma?a=4&b=6
-app.get('/somma', function (req, res) {
+/*app.get('/somma', function (req, res) {
     let a=0
     let b=0
     a= req.query.a
@@ -48,5 +48,19 @@ app.get('/somma', function (req, res) {
     console.log("Divisione: "+ c)
     res.send("Divisione: "+ c)
   })
-  
+*/
+
+app.get('/somma', function (req, res) {
+res.send(JSON.stringify(req.query.a - -req.query.b))
+})
+
+app.get('/sottrazione', function (req, res) {
+  res.send(JSON.stringify(req.query.a - req.query.b))
+})
+app.get('/moltiplicazione', function (req, res) {
+  res.send(JSON.stringify(req.query.a * req.query.b))
+})
+app.get('/divisione', function (req, res) {
+  res.send(JSON.stringify(req.query.a / req.query.b))
+})
 app.listen(3000)
